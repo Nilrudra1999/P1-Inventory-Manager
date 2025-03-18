@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="rootPane" minHeight="800.0" minWidth="1280.0" style="-fx-background-color: #F5F5F5;"
+            xmlns="http://javafx.com/javafx/23.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="ca.senecacollege.cpa.app.controllers.PartController">
+   <center>
+      <VBox fx:id="bodyPane" alignment="TOP_CENTER" maxWidth="1230.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox fx:id="formColPane" alignment="TOP_CENTER" maxHeight="1230.0" minHeight="100.0" minWidth="1230.0">
+               <children>
+                  <VBox fx:id="textFieldPane" alignment="TOP_RIGHT" minWidth="615.0">
+                     <padding>
+                        <Insets right="15.0" />
+                     </padding>
+                     <children>
+                        <HBox fx:id="extractIdPane" alignment="CENTER_RIGHT" minHeight="65.0" minWidth="200.0">
+                           <children>
+                              <Label fx:id="idText" text="ID">
+                                 <HBox.margin>
+                                    <Insets right="20.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Arial Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="autoGenTextField" minWidth="600.0" promptText="Auto Gen - Disabled">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="extractNamePane" alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" minHeight="65.0" minWidth="200.0">
+                           <children>
+                              <Label fx:id="nameText" text="Name">
+                                 <HBox.margin>
+                                    <Insets right="20.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Arial Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="nameTextField" minWidth="600.0">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="extractInvPane" alignment="CENTER_RIGHT" layoutX="10.0" layoutY="75.0" minHeight="65.0" minWidth="200.0">
+                           <children>
+                              <Label fx:id="inventoryText" text="Inventory">
+                                 <HBox.margin>
+                                    <Insets right="20.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Arial Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="inventoryTextField" minWidth="600.0">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="extractPricePane" alignment="CENTER_RIGHT" layoutX="10.0" layoutY="140.0" minHeight="65.0" minWidth="200.0">
+                           <children>
+                              <Label fx:id="priceText" text="Price">
+                                 <HBox.margin>
+                                    <Insets right="20.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Arial Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="priceTextField" minWidth="600.0">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="extractMaxPane" alignment="CENTER_RIGHT" layoutX="10.0" layoutY="205.0" minHeight="65.0" minWidth="200.0">
+                           <children>
+                              <Label fx:id="maxText" text="Max">
+                                 <HBox.margin>
+                                    <Insets right="20.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Arial Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="maxTextField" minWidth="600.0">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="extractMinPane" alignment="CENTER_RIGHT" layoutX="10.0" layoutY="270.0" minHeight="65.0" minWidth="200.0">
+                           <children>
+                              <Label fx:id="minText" text="Min">
+                                 <HBox.margin>
+                                    <Insets right="20.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Arial Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="minTextField" minWidth="600.0">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="extractPartSpecPane" alignment="CENTER_RIGHT" layoutX="10.0" layoutY="335.0" minHeight="65.0" minWidth="200.0">
+                           <children>
+                              <Label fx:id="partSpecText" text="MachineID">
+                                 <HBox.margin>
+                                    <Insets right="20.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Arial Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="partSpecTextField" minWidth="600.0">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </HBox>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+            </HBox>
+         </children></VBox>
+   </center>
+   <top>
+      <HBox fx:id="headContentPane" alignment="TOP_CENTER" minHeight="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox fx:id="titlePane" minWidth="500.0">
+               <children>
+                  <Text fx:id="titleText" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Part">
+                     <font>
+                        <Font name="Arial Bold" size="30.0" />
+                     </font>
+                  </Text>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </HBox>
+            <HBox fx:id="partTypePane" minWidth="615.0">
+               <children>
+                  <RadioButton fx:id="inHouseRadio" mnemonicParsing="false" text="In-House">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="outSourcedRadio" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Out-Sourced">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="150.0" />
+                     </HBox.margin>
+                  </RadioButton>
+               </children>
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+            </HBox>
+         </children>
+         <padding>
+            <Insets top="35.0" />
+         </padding>
+      </HBox>
+   </top>
+   <bottom>
+      <HBox fx:id="bottomBtnPane" alignment="TOP_CENTER" maxWidth="1230.0" minHeight="100.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="25.0" />
+         </BorderPane.margin>
+         <children>
+            <HBox fx:id="exitBtnPane" alignment="CENTER" minHeight="100.0" minWidth="410.0">
+               <children>
+                  <Button fx:id="exitBtn" minWidth="200.0" mnemonicParsing="false" onAction="#handleExit" style="-fx-background-color: #4A4A4A; -fx-background-radius: 10px;" text="Exit" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox fx:id="saveBtnPane" alignment="CENTER" layoutX="420.0" layoutY="10.0" minHeight="100.0" minWidth="410.0">
+               <children>
+                  <Button fx:id="saveBtn" minWidth="200.0" mnemonicParsing="false" onAction="#handleSave" style="-fx-background-color: #4A4A4A; -fx-background-radius: 10px;" text="Save" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox fx:id="cancelBtnPane" alignment="CENTER" layoutX="625.0" layoutY="10.0" minHeight="100.0" minWidth="410.0">
+               <children>
+                  <Button fx:id="cancelBtn" minWidth="200.0" mnemonicParsing="false" onAction="#handleCancel" style="-fx-background-color: #4A4A4A; -fx-background-radius: 10px;" text="Cancel" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
